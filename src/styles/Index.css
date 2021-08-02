@@ -1,4 +1,5 @@
 @import "./NavBar.css";
+@import "./ItemListContiner.css";
 
 :root {
     --fuentePrimaria: 'Amatic SC', cursive;

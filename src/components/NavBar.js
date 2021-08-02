@@ -1,5 +1,6 @@
 import logo from "../img/coffee.png";
 import "../styles/Index.css";
+import CartWidget from "../components/CartWidget";
 
 export default function NavBar () {
     return (
@@ -19,7 +20,7 @@ export default function NavBar () {
                         <a className="nav-link me-3" href="#b">Home Roasters</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link me-3" href="#c"><i className="fas fa-shopping-cart me-2"></i>Tienda</a>
+                        <a className="nav-link me-3" href="#c"><CartWidget />Tienda</a>
                     </li>
                     <li className="nav-item dropdown me-3">
                         <a className="nav-link dropdown-toggle" href="#d" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
