@@ -19,9 +19,6 @@ export default function NavBar () {
                     <li className="nav-item">
                         <a className="nav-link me-3" href="#b">Home Roasters</a>
                     </li>
-                    <li className="nav-item">
-                        <a className="nav-link me-3" href="#c"><CartWidget />Tienda</a>
-                    </li>
                     <li className="nav-item dropdown me-3">
                         <a className="nav-link dropdown-toggle" href="#d" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Variedades
@@ -34,6 +31,9 @@ export default function NavBar () {
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="#h">Contacto</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link ms-3" href="#c"><CartWidget /></a>
                     </li>
                     </ul>
                 </div>
