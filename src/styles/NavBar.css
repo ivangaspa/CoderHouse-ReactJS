@@ -7,3 +7,27 @@
     font-family: 'Amatic SC', cursive;
     font-size: 1.7rem;
 }
+
+.cartStyle,
+.cartStyle:visited {
+    color: rgb(43, 42, 42);
+    text-decoration: none;
+}
+
+.cartStyle:hover {
+    color: rgb(66, 65, 65);
+}
+
+.badgeAbs {
+    position: absolute;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    right: 25px;
+    top: 20px;
+    font-size: 0.8rem;
+}
+
+.navColor {
+    background: #FFEFBA;
+    background: -webkit-linear-gradient(to left, #eeebeb, #FFEFBA);
+    background: linear-gradient(to left, #eeeae5, #FFEFBA);
+}

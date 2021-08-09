@@ -1,0 +1,40 @@
+.buttonAdd {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    padding: 0;
+    background-color: moccasin;
+}
+
+.buttonRem {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    padding: 0;
+    background-color: moccasin;
+}
+
+.buttonRem:hover,
+.buttonAdd:hover {
+    background-color: peru;
+}
+
+.cartButton {
+    border: none;
+    background-color: transparent;
+    font-size: 1.8rem;
+}
+
+.cartButton:hover {
+    color: #6f4e37;
+}
+
+.greyText {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: darkgray;
+}

@@ -1,6 +1,12 @@
 @import "./NavBar.css";
 @import "./ItemListContiner.css";
+@import "./ButtonCart.css";
 
 :root {
     --fuentePrimaria: 'Amatic SC', cursive;
+}
+
+.productDemo {
+    width: 280px;
+    background-color: snow;
 }
