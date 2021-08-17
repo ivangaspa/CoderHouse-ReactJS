@@ -10,7 +10,7 @@ const products = [
     },
     {
         id: 2,
-        name: "Auvelcraft Coffee Beans Roster",
+        name: "Auvelcraft Coffee Beans Roaster",
         image:"https://i.ibb.co/sCXnJLb/coffeeroaster2.png",
         description: "Tostadora de café compacta con malla de acero inoxidable de 3.5mm. Origen Japón",
         price:6500,
