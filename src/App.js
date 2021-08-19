@@ -3,6 +3,7 @@ import ItemListContainer from "./components/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import products from "./data/Products";
 import {useState, useEffect} from 'react';
+import {BrowserRouter, Switch, Route} from 'react-router-dom'
 
 function App() {
 
@@ -20,14 +21,18 @@ function App() {
   }, []);
   
   return (
-    <div className="App">
+    <BrowserRouter>
       <NavBar />
-      <ItemListContainer products={productsList} />
-      <ItemDetailContainer id="0" />
-      <ItemDetailContainer id="1" />
-      <ItemDetailContainer id="2" />
-      <ItemDetailContainer id="3" />
-    </div>
+      <Switch>
+        <Route exact path="/">
+          <ItemListContainer products={productsList} />
+        </Route>
+        <Route exact path="/item-details/:id">
+          <ItemDetailContainer />
+        </Route>
+      </Switch>
+
+    </BrowserRouter>
   );
 }
 

@@ -2,38 +2,33 @@ import logo from "../img/coffee.png";
 import "../styles/Index.css";
 import CartWidget from "../components/CartWidget";
 
+import {Link} from 'react-router-dom'
+
 export default function NavBar() {
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-light navColor sticky-top">
                 <div className="container-fluid">
-                    <a className="nav-link link-dark" aria-current="page" href="#a"><img className="logo me-3" src={logo} alt="Logo Brewed Beans" />Brewed Beans</a>
+                    <Link to={`/`} className="nav-link link-dark"><img className="logo me-3" src={logo} alt="Logo Brewed Beans" />Brewed Beans</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                         <ul className="navbar-nav">
                             <li className="nav-item dropdown me-3">
-                                <a className="nav-link dropdown-toggle" href="#d" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Variedades
-                                </a>
-                                <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a className="dropdown-item" href="#e">XXXXXXX</a></li>
-                                <li><a className="dropdown-item" href="#f">XXXXXXXXXX</a></li>
-                                <li><a className="dropdown-item" href="#g">XXXXXXXXXXXXXX</a></li>
-                                </ul>
+                                <Link className="nav-link me-3" to={`/coffee`}>Café</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link me-3" href="#b">Home Roasters</a>
+                                <Link className="nav-link me-3" to={`/home-roasters`}>Home Roasters</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link me-3" href="#b">Cafeteras y Molinos</a>
+                                <Link className="nav-link me-3" to={`/coffee-machines&grinders`}>Cafeteras y Molinos</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#h">Contacto</a>
+                                <Link className="nav-link" to={`/contact`}>Contacto</Link>
                             </li>
                             <li className="nav-item me-3">
-                                <a className="nav-link ms-3" href="#c"><CartWidget /></a>
+                                <Link className="nav-link ms-3" to={`/cart`}><CartWidget /></Link>
                             </li>
                         </ul>
                     </div>
