@@ -4,17 +4,19 @@ import { useState,useEffect } from 'react';
 import jsonProducts from "../data/products.json";
 import ItemDetail from './ItemDetail';
 import { useParams } from "react-router-dom";
+import Loading from "../components/Loading";
 
 export default function ItemDetailContainer() {
     
     const [itemDetail, setItemDetail] = useState([]);
     const [loading, setLoading] = useState(true);
-    const id = useParams();
+    const { id } = useParams();
+    const { productGroup } = useParams();
 
     const getItems = async () => {
         return new Promise((resolve, reject) => {
             
-            setTimeout(() => resolve(jsonProducts[id.id]), 1000);
+            setTimeout(() => resolve(jsonProducts[productGroup][id]), 1000);
         })
     };
     
@@ -29,15 +31,13 @@ export default function ItemDetailContainer() {
 
     if (loading) {
         return (
-        <div className="text-center mt-5">
-            <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-        </div>
-        )
+            <Loading />
+        );
     }
 
     return (
         <div className="row mx-auto container-fluid justify-content-center">
-            <ItemDetail item = {itemDetail}/>
+            <ItemDetail item = {itemDetail} group= {productGroup}/>
         </div>
     ) 
 }

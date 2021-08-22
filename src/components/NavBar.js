@@ -2,7 +2,7 @@ import logo from "../img/coffee.png";
 import "../styles/Index.css";
 import CartWidget from "../components/CartWidget";
 
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 export default function NavBar() {
     return (
@@ -16,13 +16,13 @@ export default function NavBar() {
                     <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                         <ul className="navbar-nav">
                             <li className="nav-item dropdown me-3">
-                                <Link className="nav-link me-3" to={`/coffee`}>Café</Link>
+                                <Link className="nav-link me-3" to={`/products/coffee`}>Café</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link me-3" to={`/home-roasters`}>Home Roasters</Link>
+                                <Link className="nav-link me-3" to={`/products/homeroasters`}>Home Roasters</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link me-3" to={`/coffee-machines&grinders`}>Cafeteras y Molinos</Link>
+                                <Link className="nav-link me-3" to={`/products/grinders`}>Cafeteras y Molinos</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to={`/contact`}>Contacto</Link>

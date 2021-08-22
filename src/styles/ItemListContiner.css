@@ -3,3 +3,13 @@
     font-size: 1.5rem;
     font-weight: 900;
 }
+
+.containerFont {
+    font-family: 'Amatic SC', cursive;
+    color: rgb(104, 104, 104);
+    font-size: 1.3rem;
+}
+
+.priceFont {
+    font-size: 1.4rem;
+}

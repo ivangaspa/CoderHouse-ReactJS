@@ -1,10 +1,10 @@
-import React, { useState} from "react";
+import React, { useState, useEffect} from "react";
 import Button from "../components/Button";
 
 export default function ItemCount(props) {
-    const [articulo] = useState(props.articulo);
-    const [count, setCount] = useState(0);
-    const [stock] = useState(props.stock);
+    const [articulo, setArticulo] = useState(props.articulo);
+    const [count, setCount] = useState(props.initial);
+    const [stock, setStock] = useState(props.stock);
 
     const onAdd = () => {
         if(stock === 0) {
@@ -15,6 +15,12 @@ export default function ItemCount(props) {
 
         alert("Productos agregados al carrito!");
     }
+
+    useEffect(() => {
+        setArticulo(props.articulo);
+        setStock(props.stock);
+        setCount(props.initial);
+    }, [props.stock, props.articulo, props.initial]);
 
     return (
         <div className = "text-center mb-3 mx-1">

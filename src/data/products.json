@@ -1,38 +1,130 @@
-[
-    {
-        "id": 0,
-        "name": "Tostadora De Granos De Café CBR-101",
-        "image":"https://i.ibb.co/60VDwbb/coffeeroaster1.png",
-        "description": "Gene Café CBR-101 es una tostadora de café para uso doméstico y que también se utiliza en cafeterías y restaurantes. El tostado es por aire caliente en un tambor giratorio. La alimentación es eléctrica de 220 V. Poseen Certificado de Seguridad Eléctrica para Argentina.",
-        "price":137000,
-        "product":"Gene Café CBR-101",
-        "stock":10
-    },
-    {
-        "id": 1,
-        "name": "Auvelcraft Coffee Beans Roaster",
-        "image":"https://i.ibb.co/sCXnJLb/coffeeroaster2.png",
-        "description": "Tostadora de café compacta con malla de acero inoxidable de 3.5mm. Origen Japón",
-        "price":6500,
-        "product":"Mini Home Roaster",
-        "stock":3
-    },
-    {
-        "id": 2,
-        "name": "Mini tostador de café manual",
-        "image":"https://i.ibb.co/tcgDg6W/coffeeroaster3.png",
-        "description": "Hecho de material de acero inoxidable de grado alimenticio, que es seguro, resistente y duradero. Viene con el mango del agitador, más uniformemente para calentar frijoles y se puede hornear con más volumen de frijoles. Diseño de soporte rectangular: conveniente para observar el color de cocción y los cambios de forma de los granos de café en cualquier momento a través del agujero del rodillo. Máquina tostadora manual de granos de café: haga un sabor fresco y suave del café.",
-        "price":5200,
-        "product":"Mini Home Roaster",
-        "stock":0
-    },
-    {
-        "id": 3,
-        "name": "FIREWORKS – Home Roaster",
-        "image":"https://i.ibb.co/82d2pXN/coffeeroaster4.png",
-        "description": "Producto único en su género. Pequeñas tostadoras para tostar café verde desde la hornalla de la cocina de tu casa. Construidas con materiales super resistentes. Diseñadas para que duren generaciones. Entrá en el mundo de Home Roasting y tostá tu proprio café en solo 20 minutos.",
-        "price":18500,
-        "product":"Tostadoras domésticas de café",
-        "stock":5
-    }
-]
+{
+    "coffee": [
+        {
+            "id": 0,
+            "name": "Cartago - COLOMBIA - 250g",
+            "image":"https://i.ibb.co/cgPZCtz/coffee0.png",
+            "description": "Origen Cartago, Nariño, Altura 1851 msnm. Varietal Bourbon Rosado, Nota de cata: Rosa, Pimienta Roja, Frutilla.",
+            "price":1250,
+            "product":"Bourbon Rosado",
+            "stock":4,
+            "group": "coffee"
+        },
+        {
+            "id": 1,
+            "name": "Chiapas - MEXICO - 250g",
+            "image":"https://i.ibb.co/MGL2tqQ/coffee1.png",
+            "description": "Origen Chiapas, Altura 1800 msnm, Variedad Bourbon Rojo, Nota de cata: de acidez cítrica media y cuerpo equilibrado. Nuez, miel y caramelo.",
+            "price":1250,
+            "product":"Bourbon Rojo",
+            "stock":5,
+            "group": "coffee"
+        },
+        {
+            "id": 2,
+            "name": "Cerrado Minherio - BRASIL - 250g",
+            "image":"https://i.ibb.co/HgDSRkL/coffee6.png",
+            "description": "Origen Fazenda Serrinha, Altura 1200 msnm, Varietal Catuaí Rojo, Nota de cata: Manteca, chocolate, castañas y frutos amarillos. De cuerpo medio y acidez citrica.",
+            "price":960,
+            "product":"Catuaí Rojo",
+            "stock":7,
+            "group": "coffee"
+        },
+        {
+            "id": 3,
+            "name": "Box COLOMBIA - PENGUIN",
+            "image":"https://i.ibb.co/d6C9zYJ/coffee8.png",
+            "description": "Caja degustación de cafés Colombianos tostados por Penguin Coffee Roasters. 1 Antioquia COLOMBIA 250g + 1 Santander COLOMBIA 250g + 1 Inzá COLOMBIA 250g.",
+            "price":3290,
+            "product":"Box Degustación",
+            "stock":5,
+            "group": "coffee"
+        }
+    ],
+
+    "homeroasters": [
+        {
+            "id": 0,
+            "name": "Tostadora De Granos De Café CBR-101",
+            "image":"https://i.ibb.co/60VDwbb/coffeeroaster1.png",
+            "description": "Gene Café CBR-101 es una tostadora de café para uso doméstico y que también se utiliza en cafeterías y restaurantes. El tostado es por aire caliente en un tambor giratorio. La alimentación es eléctrica de 220 V. Poseen Certificado de Seguridad Eléctrica para Argentina.",
+            "price":137000,
+            "product":"Gene Café CBR-101",
+            "stock":10,
+            "group": "homeroasters"
+        },
+        {
+            "id": 1,
+            "name": "Auvelcraft Coffee Beans Roaster",
+            "image":"https://i.ibb.co/sCXnJLb/coffeeroaster2.png",
+            "description": "Tostadora de café compacta con malla de acero inoxidable de 3.5mm. Origen Japón",
+            "price":6500,
+            "product":"Mini Home Roaster",
+            "stock":3,
+            "group": "homeroasters"
+        },
+        {
+            "id": 2,
+            "name": "Mini tostador de café manual",
+            "image":"https://i.ibb.co/tcgDg6W/coffeeroaster3.png",
+            "description": "Hecho de material de acero inoxidable de grado alimenticio, que es seguro, resistente y duradero. Viene con el mango del agitador, más uniformemente para calentar frijoles y se puede hornear con más volumen de frijoles. Diseño de soporte rectangular: conveniente para observar el color de cocción y los cambios de forma de los granos de café en cualquier momento a través del agujero del rodillo. Máquina tostadora manual de granos de café: haga un sabor fresco y suave del café.",
+            "price":5200,
+            "product":"Mini Home Roaster",
+            "stock":0,
+            "group": "homeroasters"
+        },
+        {
+            "id": 3,
+            "name": "FIREWORKS – Home Roaster",
+            "image":"https://i.ibb.co/82d2pXN/coffeeroaster4.png",
+            "description": "Producto único en su género. Pequeñas tostadoras para tostar café verde desde la hornalla de la cocina de tu casa. Construidas con materiales super resistentes. Diseñadas para que duren generaciones. Entrá en el mundo de Home Roasting y tostá tu proprio café en solo 20 minutos.",
+            "price":18500,
+            "product":"Tostadoras domésticas de café",
+            "stock":5,
+            "group": "homeroasters"
+        }
+    ],
+
+    "grinders": [
+        {
+            "id": 0,
+            "name": "Nescafé Moulinex Dolce Gusto Mini Me",
+            "image":"https://i.ibb.co/YdYs4Tx/coffeemaker3.png",
+            "description": "Con su larga trayectoria Nescafé es líder en el mercado de bebidas y máquinas de café. Esta marca se destaca por hacer de tu café una obra de arte, pero sobre todo exquisito. Su gran variedad en cuanto a máquinas y sabores la convierten en tu compañera ideal para cualquier ocasión, sea en la oficina, en tu hogar o simplemente compartir un momento delicioso.",
+            "price":26999,
+            "product":"Cafetera para cápsulas monodosis",
+            "stock":17,
+            "group": "grinders"
+        },
+        {
+            "id": 1,
+            "name": "Oster PrimaLatte BVSTEM6701",
+            "image":"https://i.ibb.co/cQT65Pq/coffeemaker2.png",
+            "description": "Con la cafetera Oster BVSTEM6701 tus días no serán iguales. Al ser rápida y eficiente podrás tomar tu café a cualquier hora y disfrutarás de un aroma increíble. Además, tiene un pequeño depósito de leche y se apaga de manera automática mejorando aún más tu experiencia.",
+            "price":41966,
+            "product":"Cafetera expreso, cápsulas monodosis",
+            "stock":8,
+            "group": "grinders"
+        },
+        {
+            "id": 2,
+            "name": "Molinillo De Cafe Manual",
+            "image":"https://i.ibb.co/X3mFF42/coffeegrinder1.png",
+            "description": "Muela metalica, Industria Argentina. Garantia M.A.: 5 años de garantía, Estructura de Madera, Excelente Calidad y diseño clásico",
+            "price":8415,
+            "product":"Molino de café M.A.",
+            "stock":2,
+            "group": "grinders"
+        },
+        {
+            "id": 3,
+            "name": "Saeco Lirika Plus Con Molinillo",
+            "image":"https://i.ibb.co/Ntd3y2X/coffeemaker1.png",
+            "description": "La Saeco Lirika es una enorme cafetera express de 2.5 litros de capacidad. Se distingue, aparte de por su volumen, por permitir preparar de manera automática una gran variedad de bebidas, pulsando un solo botón. Desde capuccinos hasta lattes, pasando por espressos normales, cafés largos, agua caliente, etc.",
+            "price":93493,
+            "product":"SAECO LIRIKA PLUS SILVER",
+            "stock":1,
+            "group": "grinders"
+        }
+    ]
+}
