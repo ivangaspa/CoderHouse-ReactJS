@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import ItemCount from "./ItemCount";
 
-export default function ItemDetail({item : {id, name, image, price, description, product}, group}) {
+export default function ItemDetail({item : {id, name, image, price, description, product, stock}, group}) {
 
     return (
         <>
@@ -12,9 +13,9 @@ export default function ItemDetail({item : {id, name, image, price, description,
                     <h6>Descripción:</h6>
                     <p className="py-2">{description}</p>
                     <h3 className="link-primary">${price}</h3>
+                    <ItemCount articulo={product} stock={stock} initial={1}/>
                 </div>
-                <Link className="nav-link text-start col-9" to={`/products/${group}`}><i className="fas fa-reply"></i> Volver a productos</Link>
-                
+                <Link className="nav-link" to={`/products/${group}`}><i className="fas fa-reply"></i> Volver a productos</Link>
             </div>
         </>
     );

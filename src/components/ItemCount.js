@@ -1,10 +1,12 @@
 import React, { useState, useEffect} from "react";
 import Button from "../components/Button";
+import { Link } from "react-router-dom";
 
 export default function ItemCount(props) {
     const [articulo, setArticulo] = useState(props.articulo);
     const [count, setCount] = useState(props.initial);
     const [stock, setStock] = useState(props.stock);
+    const [finishState, setFinishState] = useState(false);
 
     const onAdd = () => {
         if(stock === 0) {
@@ -12,9 +14,14 @@ export default function ItemCount(props) {
             return;
         }
         if(count === 0) setCount(count + 1);
-
-        alert("Productos agregados al carrito!");
+        setFinishState(true);
+        // alert("Productos agregados al carrito!");
     }
+
+    const goToCart = () => {
+        setFinishState(false);
+    }
+
 
     useEffect(() => {
         setArticulo(props.articulo);
@@ -33,6 +40,7 @@ export default function ItemCount(props) {
                 </div>
                 <button className="my-2 ps-4 col-3 cartButton" onClick={onAdd}><i className="fas fa-cart-plus"></i></button>
                 <h6 className="my-2 greyText col-7">({stock} disponibles)</h6>
+                {finishState === true &&  <Link to={`/cart`}><button onClick={goToCart} className="col-8 finishButton mx-auto">Terminar compra</button></Link>}
             </div>
         </div>
     );

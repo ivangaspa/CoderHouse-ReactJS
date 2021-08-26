@@ -1,3 +1,12 @@
+.finishButton {
+    border-radius: 15px;
+    border: none;
+    padding: 3px 0;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.2rem;
+    background-color: moccasin;
+}
+
 .buttonAdd {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
